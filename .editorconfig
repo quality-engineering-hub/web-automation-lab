@@ -1,0 +1,169 @@
+
+# EditorConfig configuration for Quality Engineering Hub
+# Web Automation Lab
+#
+# Purpose:
+# Maintain consistent formatting across editors, IDEs,
+# programming languages and operating systems.
+#
+# Documentation:
+# https://editorconfig.org/
+
+# Stop EditorConfig from searching parent directories.
+# This makes this repository's settings the root settings.
+root = true
+
+
+# --------------------------------------------------
+# GENERAL FILE SETTINGS
+# Applies to all files unless overridden below.
+# --------------------------------------------------
+
+[*]
+
+# Use UTF-8 encoding for consistent text handling.
+charset = utf-8
+
+# Use Unix-style line endings (LF).
+# This avoids Windows/Linux line-ending conflicts.
+end_of_line = lf
+
+# Ensure every file ends with a newline.
+insert_final_newline = true
+
+# Use spaces instead of tabs by default.
+indent_style = space
+
+# Default indentation is four spaces.
+indent_size = 4
+
+# Remove unnecessary whitespace at the end of lines.
+trim_trailing_whitespace = true
+
+
+# --------------------------------------------------
+# MARKDOWN DOCUMENTATION
+# README files, architecture documents and guides.
+# --------------------------------------------------
+
+[*.md]
+
+# Preserve intentional trailing spaces in Markdown.
+# Markdown can use trailing spaces for line breaks.
+trim_trailing_whitespace = false
+
+# Use consistent two-space indentation in Markdown.
+indent_size = 2
+
+
+# --------------------------------------------------
+# YAML CONFIGURATION
+# GitHub Actions, workflow files and YAML settings.
+# --------------------------------------------------
+
+[*.{yml,yaml}]
+
+# YAML indentation must use spaces.
+indent_style = space
+
+# Two spaces are the standard YAML indentation.
+indent_size = 2
+
+
+# --------------------------------------------------
+# JSON CONFIGURATION
+# Package files and framework configuration.
+# --------------------------------------------------
+
+[*.json]
+
+# Use two spaces for readable JSON structures.
+indent_size = 2
+
+
+# --------------------------------------------------
+# JAVASCRIPT AND TYPESCRIPT
+# Playwright, Cypress and supporting utilities.
+# --------------------------------------------------
+
+[*.{js,jsx,ts,tsx,mjs,cjs}]
+
+# Use two spaces for JavaScript and TypeScript.
+indent_size = 2
+
+
+# --------------------------------------------------
+# PYTHON
+# Selenium automation and Python-based tooling.
+# --------------------------------------------------
+
+[*.py]
+
+# Follow the standard Python indentation convention.
+indent_size = 4
+
+
+# --------------------------------------------------
+# JAVA AND C#
+# Selenium implementations and supporting libraries.
+# --------------------------------------------------
+
+[*.{java,cs}]
+
+# Use four spaces for Java and C# source files.
+indent_size = 4
+
+
+# --------------------------------------------------
+# HTML AND CSS
+# Web application and test fixture files.
+# --------------------------------------------------
+
+[*.{html,css,scss,xml}]
+
+# Use two spaces for web markup and stylesheets.
+indent_size = 2
+
+
+# --------------------------------------------------
+# SHELL SCRIPTS
+# Ubuntu setup scripts and automation utilities.
+# --------------------------------------------------
+
+[*.sh]
+
+# Use Unix shell indentation conventions.
+indent_style = space
+indent_size = 2
+
+
+# --------------------------------------------------
+# DOCKER AND BUILD CONFIGURATION
+# --------------------------------------------------
+
+[Dockerfile]
+
+# Use consistent indentation in Dockerfiles.
+indent_size = 4
+
+
+# --------------------------------------------------
+# MAKEFILE
+# Make requires tabs for command indentation.
+# --------------------------------------------------
+
+[Makefile]
+
+# Override the general space setting.
+indent_style = tab
+
+
+# --------------------------------------------------
+# POWERSHELL
+# Windows automation and setup scripts.
+# --------------------------------------------------
+
+[*.ps1]
+
+indent_style = space
+indent_size = 4

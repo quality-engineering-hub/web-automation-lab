@@ -1,0 +1,252 @@
+
+# ==================================================
+# QUALITY ENGINEERING HUB
+# WEB AUTOMATION LAB
+# Git Ignore Configuration
+# ==================================================
+#
+# Purpose:
+# Prevent generated files, dependencies, temporary
+# artifacts, local configuration and sensitive data
+# from being committed to the repository.
+#
+# ==================================================
+# OPERATING SYSTEM FILES
+# ==================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==================================================
+# EDITORS AND IDEs
+# ==================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+
+# ==================================================
+# ENVIRONMENT VARIABLES AND SECRETS
+# ==================================================
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+secrets/
+credentials/
+private-config/
+
+# ==================================================
+# PYTHON
+# ==================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+
+.venv/
+venv/
+ENV/
+env/
+
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+build/
+dist/
+wheels/
+
+.coverage
+.coverage.*
+htmlcov/
+
+# ==================================================
+# NODE.JS AND JAVASCRIPT
+# ==================================================
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+.npm/
+.eslintcache
+.stylelintcache
+
+# Package manager and build caches.
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+.cache/
+
+# Build output.
+lib/
+out/
+dist/
+
+# ==================================================
+# PLAYWRIGHT
+# ==================================================
+
+# Playwright test execution output.
+test-results/
+playwright-report/
+blob-report/
+
+# Playwright browser downloads.
+# Browser binaries should be installed by Playwright.
+.playwright/
+
+# ==================================================
+# CYPRESS
+# ==================================================
+
+# Cypress generated videos and screenshots.
+cypress/videos/
+cypress/screenshots/
+
+# Cypress local cache.
+.cypress/
+
+# ==================================================
+# SELENIUM
+# ==================================================
+
+# Browser driver logs.
+geckodriver.log
+chromedriver.log
+msedgedriver.log
+
+# Selenium generated screenshots.
+selenium-screenshots/
+
+# ==================================================
+# TEST REPORTS AND COVERAGE
+# ==================================================
+
+allure-results/
+allure-report/
+
+reports/
+test-reports/
+
+coverage/
+.nyc_output/
+
+*.lcov
+
+# ==================================================
+# BROWSER AND TEST ARTIFACTS
+# ==================================================
+
+screenshots/
+videos/
+recordings/
+
+*.har
+*.trace.zip
+
+# ==================================================
+# JAVA AND BUILD TOOLS
+# ==================================================
+
+target/
+.gradle/
+gradle-app.setting
+
+*.class
+*.jar
+*.war
+*.ear
+
+# ==================================================
+# C# AND .NET
+# ==================================================
+
+bin/
+obj/
+TestResults/
+
+*.user
+*.suo
+*.cache
+
+# ==================================================
+# DOCKER
+# ==================================================
+
+# Local Docker environment overrides.
+docker-compose.override.yml
+
+# ==================================================
+# LOGS AND TEMPORARY FILES
+# ==================================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+
+# ==================================================
+# DATABASE AND LOCAL TEST DATA
+# ==================================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+# Local database backups.
+*.sql.backup
+*.dump
+
+# ==================================================
+# GENERATED DOCUMENTATION
+# ==================================================
+
+site/
+public/build/
+
+# ==================================================
+# LOCAL DEVELOPMENT CONFIGURATION
+# ==================================================
+
+.local/
+.local-share/
+*.local
+
+# ==================================================
+# END
+# ==================================================

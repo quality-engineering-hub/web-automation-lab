@@ -1,0 +1,152 @@
+
+# ==================================================
+# QUALITY ENGINEERING HUB
+# WEB AUTOMATION LAB
+# Git Attributes Configuration
+# ==================================================
+#
+# Purpose:
+# Establish consistent Git behaviour across operating
+# systems, development environments and CI/CD pipelines.
+#
+# Documentation:
+# https://git-scm.com/docs/gitattributes
+#
+# ==================================================
+# GENERAL TEXT FILE HANDLING
+# ==================================================
+
+# Automatically detect text files and normalise
+# line endings in the Git repository.
+* text=auto
+
+# ==================================================
+# LINE ENDING STANDARDS
+# ==================================================
+
+# Keep source code and configuration files using LF.
+# This prevents Windows/Linux line-ending conflicts.
+
+*.sh text eol=lf
+*.bash text eol=lf
+
+*.py text eol=lf
+
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+*.java text eol=lf
+*.cs text eol=lf
+
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.xml text eol=lf
+
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+
+*.md text eol=lf
+*.txt text eol=lf
+*.editorconfig text eol=lf
+*.gitattributes text eol=lf
+*.gitignore text eol=lf
+
+# ==================================================
+# WINDOWS SCRIPT HANDLING
+# ==================================================
+
+# PowerShell scripts use LF in the repository.
+*.ps1 text eol=lf
+*.psm1 text eol=lf
+*.psd1 text eol=lf
+
+# Windows command scripts use CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# ==================================================
+# DOCKER AND CI/CD FILES
+# ==================================================
+
+Dockerfile text eol=lf
+docker-compose.yml text eol=lf
+docker-compose.yaml text eol=lf
+Makefile text eol=lf
+
+# GitHub Actions workflows.
+.github/workflows/** text eol=lf
+
+# ==================================================
+# BINARY FILES
+# ==================================================
+
+# Images should not be treated as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg binary
+
+# Documents and reports.
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Archives.
+*.zip binary
+*.7z binary
+*.tar binary
+*.gz binary
+
+# Compiled and executable files.
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.class binary
+*.jar binary
+
+# ==================================================
+# TEST AUTOMATION ARTIFACTS
+# ==================================================
+
+# Browser recordings and test evidence are binary.
+*.mp4 binary
+*.webm binary
+*.mov binary
+
+# Playwright and Cypress screenshots.
+# These are image artifacts, not source files.
+screenshots/** -text
+videos/** -text
+
+# ==================================================
+# DIFF AND MERGE BEHAVIOUR
+# ==================================================
+
+# Treat Markdown as text for readable Git diffs.
+*.md diff
+
+# Treat common structured data formats as text.
+*.json diff
+*.yaml diff
+*.yml diff
+*.xml diff
+
+# ==================================================
+# END
+# ==================================================
